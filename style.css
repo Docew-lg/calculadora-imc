@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(45deg, rgb(180, 214, 181), rgb(247, 218, 218));
+    min-height: 100vh;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 22px 10px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.caixa {
+    border-radius: 15px;
+    padding: 14px 9px;
+    height: 4px;
+}
+
+.baixo {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.txt{
+    margin: 15px;
+}
+
+.button {
+ background-color: rgb(170, 180, 152);
+ height: 50px;
+ width: 160px;
+ border-radius: 30px;
+ font-size: 20px;
+ border-style: outset;
+}
