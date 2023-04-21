@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <script>
+         function calculaIMC(){
+            let massa = document.getElementById("massa").value;
+            let altura = document.getElementById("altura").value;
+            console.log("Massa: " +massa);
+            console.log("Altura: "+altura);
+
+            let imc = massa / Math.pow(altura, 2)
+
+            document.getElementById("resultado").innerHTML = "Resultado: " +imc.toFixed(2)
+         }
+
+    </script>
+    
+<div class="container">
+    <div class="card">
+     <form>
+        <label for="massa" > Massa: </label><br>
+        <input type="number" id="massa" name="massa" class="caixa"><br>
+        <label for="altura" > Altura: </label><br>
+        <input type="number" id="altura" name="altura" class="caixa"><br>
+
+     </form>
+      <div class="baixo">
+         <button onclick="calculaIMC()" class="button">Calcular IMC</button>
+
+         <p id="resultado" class="txt">Resultado: </p>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
